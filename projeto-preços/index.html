@@ -28,10 +28,7 @@
             background-image: linear-gradient(to left, #035AA6, #023373);
             right: 100vh;
         }
-        body > header > nav a {
-            margin: 0;
-            padding: 0;
-        }
+        
         body > header {
             background-color: #024959;
             
@@ -39,9 +36,27 @@
             padding: 60px;
             height: 143;
             background-repeat: no-repeat;
+            box-shadow: 2px 3px 20px black;
             
             
             
+        }
+
+        header a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #00558a;
+            margin-top: 20px;
+            background-color: #0089a8;
+            border-radius: 10px;
+            padding: 10px;
+            transition: 1s;
+
+        }
+
+        header a:hover {
+            background-color: #55beff;
+            color: #004150;
         }
 
         body > header > h1{
@@ -50,6 +65,7 @@
             color: #22aaff;
             padding: 5px;
             font-size: 3em;
+            
             
             
             
@@ -65,6 +81,7 @@
             border: 5px solid #22aaff;
             padding: 20px;
             text-align: center;
+            box-shadow: 1px 2px 20px black;
         }
 
         body > main h2 {
@@ -82,7 +99,7 @@
         
 
         body > main h2:hover {
-            background-color: rgb(0, 0, 75);
+            background-color: rgb(41, 123, 255);
             border-radius: 20px;
             
             
@@ -154,6 +171,11 @@
     <header>
         
         <h1>Preço dos cerviços</h1> 
+        <nav>
+            <a href="/" target="href">Whatsapp</a>
+            <a href="https://www.instagram.com/byvy_refrigeracao/" target="href">Instragram</a>
+            <a href="https://www.facebook.com/byvy.geovania" target="href">Facebook</a>
+        </nav>
     </header>
     <main>
         <div class="quadrado" id="g">
