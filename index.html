@@ -1,57 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas emanuel</title>
+    <title>contas</title>
     <style>
-
         * {
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
-        body {
-            background-image: url('exencícios/ex22/imagens/wallpaper002.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
+        
+        header {
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
             
         }
-        body > header {
-            background-color: rgb(192, 192, 192);
-        }
-        body > header > h1 {
+        header p {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1,2em;
-            padding: 20px;
-            text-decoration: underline;
-        
+            margin-top: 20px;
+            color: white;
         }
-        body > nav {
-            background-color: rgb(131, 130, 130);
+        header img {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            
+            
         }
-        body a {
+        main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center
+            
+           
+            
+        }
+        main a {
             text-decoration: none;
-            padding-left: 10px;
-            color: black;
-            font-size: 2em;
             font-family: Arial, Helvetica, sans-serif;
-            }
-
+            color: white;
+        }
+        .links {
+            display: flex;
+            border: solid 5px white;
+            background-color: rgb(117, 117, 117);
+            width: 600px;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        body {
+            background-image: linear-gradient(to bottom, rgb(90, 90, 90), white);
+            height: 100vh;
+            
+        }
+        
+        main {
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>
-            Estudando 	&#x1F913;
-        </h1>
+        <img src="imggit.png" alt="">
+        <p>Lucas emanuel</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="https://github.com/Lucasemanuel098">Github</a></li>
-            <li><a href="https://www.youtube.com/channel/UC_g2hZjRtihNcoEArFZhNCA/about">Youtube</a></li>
-        </ul>
-    </nav>
+    <main>
+        <div class="links"><a href="https://steamcommunity.com/profiles/76561199110198130/" target="href">STEAM</a></div>
+        <div class="links"><a href="https://www.youtube.com/channel/UC_g2hZjRtihNcoEArFZhNCA" target="href">YOUTUBE</a></div>
+        <div class="links"><a href="https://open.spotify.com/user/v0oopoenyrqwhmpbjsf4m9gi4">SPOTIFY</a></div>
+        <div class="links"><a href="https://www.twitch.tv/lucas_emanuel028">TWITCH</a></div target="href">
+        <div class="links"><a href="https://github.com/Lucasemanuel098/html-e-css/stargazers" target="href">GITHUB</a></div>
+        
+    </main>
 </body>
 </html>
