@@ -1,0 +1,35 @@
+
+body {
+    background: linear-gradient(45deg, #96CEB4, #FFEEAD, #D9534F, #FFAD60);
+    background-size: 300%, 300%;
+    animation-name: gradient;
+    animation: gradient 10s ease-in infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0%, 50%;
+    }
+
+    50% {
+        background-position: 100%, 50%;
+    }
+
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 97vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div h1 {
+    border: solid 5px rgb(255, 255, 255);
+    color: white;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
