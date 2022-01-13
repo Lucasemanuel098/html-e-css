@@ -21,13 +21,17 @@
             align-items: center;
             flex-direction: column;
             margin: 20px;
+            background-color: rgb(107, 107, 107);
+            padding: 10px;
+            width: 60%;
+            border-radius: 20px;
             
         }
         header p {
             font-family: 'Oswald', Arial, Helvetica, sans-serif;
             margin-top: 20px;
             color: white;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
         header img {
             height: 100px;
@@ -44,7 +48,11 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            align-items: center
+            align-items: center;
+            background-color: rgb(107, 107, 107);
+            width: 60%;
+            padding: 20px;
+            border-radius: 20px;
             
            
             
@@ -66,6 +74,7 @@
             text-decoration: none;
             font-family: 'Oswald', Arial, Helvetica, sans-serif;
             color: white;
+            
         }
         .links {
             display: flex;
@@ -78,10 +87,18 @@
             padding: 10px;
             margin: 10px;
             letter-spacing: 2px;
+            transition: 1s;
+            color: white;
         }
+
+        
+
         body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             background: linear-gradient(45deg, #96CEB4, #FFEEAD, #D9534F, #FFAD60);
-            height: 97vh;
+            height: 100vh;
             margin: 0;
             animation: gradient 10s ease-in infinite;
             background-size: 300%, 300%;
@@ -96,7 +113,7 @@
 <body>
     <header>
         <img src="imggit.png" alt="">
-        <p>Lucas emanuel</p>
+        <p>LUCAS EMANUEL</p>
     </header>
     <main>
         <div class="links"><a href="https://steamcommunity.com/profiles/76561199110198130/" target="href">STEAM</a></div>
