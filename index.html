@@ -21,18 +21,20 @@
             align-items: center;
             flex-direction: column;
             margin: 20px;
-            background-color: rgb(107, 107, 107);
+            background-color: rgba(107, 107, 107, 0.425);
             padding: 10px;
             width: 60%;
             border-radius: 20px;
             
         }
-        header p {
+        header > p {
             font-family: 'Oswald', Arial, Helvetica, sans-serif;
             margin-top: 20px;
             color: white;
             letter-spacing: 1px;
         }
+        
+        
         header img {
             height: 100px;
             width: 100px;
@@ -49,7 +51,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(107, 107, 107);
+            background-color: rgba(107, 107, 107, 0.452);
             width: 60%;
             padding: 20px;
             border-radius: 20px;
@@ -70,16 +72,22 @@
             background-position: 0%, 50%;
         }
     }
+
+        
+
         main a {
             text-decoration: none;
             font-family: 'Oswald', Arial, Helvetica, sans-serif;
             color: white;
             
+            transition: 1s;
+            
+            
         }
         .links {
             display: flex;
             border: solid 5px white;
-            background-color: rgb(117, 117, 117);
+            background-color: rgba(117, 117, 117, 0.418);
             width: 60%;
             border-radius: 7px;
             text-align: center;
@@ -89,10 +97,18 @@
             letter-spacing: 2px;
             transition: 1s;
             color: white;
+            margin-left: 20px;
+            
         }
 
         
+        main img {
+            display: flex;
+            width: 24px;
+            color: white;
+            margin-right: 30%;
 
+        }
         body {
             display: flex;
             align-items: center;
@@ -105,7 +121,7 @@
             
         }
         
-    }
+    
         
         
     </style>
@@ -114,6 +130,7 @@
     <header>
         <img src="imggit.png" alt="">
         <p>LUCAS EMANUEL</p>
+        
     </header>
     <main>
         <div class="links"><a href="https://steamcommunity.com/profiles/76561199110198130/" target="href">STEAM</a></div>
