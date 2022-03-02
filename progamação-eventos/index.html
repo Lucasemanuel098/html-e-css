@@ -5,33 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progamação dos eventos</title>
+    
     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         body {
             display: flex;
+            height: 98vh;
             flex-direction: column;
             align-items: center;
             font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(45deg, #ec778b, #c45a6b, #f78090, #ffb9b9);
+            background-size: 300%, 300%;
+            background-repeat: no-repeat;
+            
+            animation: degrade 10s ease-in infinite;
+        }
+        @keyframes degrade {
+        0% {
+        background-position: 0%, 50%;
+        }
+
+        50% {
+            background-position: 100%, 50%;
+        }
+
+        100% {
+            background-position: 0%, 50%;
+        }
+        }
+        h1 {
+            text-decoration: underline;
+            font-family: 'Fjalla One', sans-serif;
+            color: #fa5a74;
+            background-color: rgb(255, 168, 168);
+            padding: 8px;
+            border-radius: 20px ;
+            
         }
         table {
             
             text-align: center;
             border-collapse: collapse;
+            border-radius: 10px;
         }
         tr.dia {
-            background-color: rgb(88, 88, 88);
+            background-color: #e21133;
+            font-family: 'Varela Round', sans-serif;
+            color: #ff7e94;
         }
         
         tr.main {
-            background-color: rgb(211, 211, 211);
+            background-color: #ff7e94;
+            color:#e21133;
+            
         }
         td {
             border: 1px solid black;
-            padding: 5px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Progamação dos eventos semanais</h1>
+    <h1>Programação dos eventos semanais</h1>
     <table>
         <tr class="dia"><td colspan="5">Dia</td></tr>
         <tr class="main"> <!--Primeira linha -->
