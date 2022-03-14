@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optgroup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="teste">Teste </h1>
+    <p>para mudar o Título, aperte no botão a baixo</p>
+    <input type="button" value="Aperte aqui" onclick="butão()">
+    <div id="div"></div>
+    <div id="div2"></div>
+    
+            <script>
+                function butão() {
+                    var titulo = window.document.querySelector('h1#teste')
+                    titulo.innerHTML = `Outro teste`
+                    var div = window.document.querySelector('div#div')
+                    div.innerHTML = `<p>para voltar ao normal, precione esse de baixo aqui</p>`
+                    var div2 = window.document.querySelector('div#div2')
+                    div2.innerHTML = `<input type="button" value="aperte aqui" id="butão2" onclick="butão2()">`
+
+                }
+                
+                function butão2() {
+                    var titulo = window.document.querySelector('h1#teste')
+                    titulo.innerHTML = `Teste`
+                }
+            </script>
+</body>
+</html>
