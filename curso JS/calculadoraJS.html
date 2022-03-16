@@ -25,11 +25,12 @@
             font-size: 14pt;
             border: 3px solid rgb(155, 155, 155);
             border-radius: 10px;
+            cursor: pointer;
         }
         div.botoes {
             display: flex;
             align-items: center;
-            cursor: pointer;
+            
             background-color: white;
             margin-top: 20px;
             padding: 20px;
@@ -44,24 +45,32 @@
             padding: 50px;
             border-radius: 30px;
         }
+        @media only screen and (max-width: 400px) {
+            main {
+                width: 200px;
+            }
+        }
+
     </style>
     
 </head>
 <body>
-    <h1>Calculadora simples com Java Script</h1>
-    <div class="valores">
-        <label> valor 1:</label>
-        <input type="number" id="numero1">
-        <label> valor 2:</label>
-        <input type="number" id="numero2">
-    </div>
-    
-    <div class="botoes">
-        <input type="button" value="somar" onclick="soma()" class="botão">
-        <input type="button" value="subtrair" onclick="subtração()" class="botão">
-        <input type="button" value="multiplicar" onclick="multiplicasão()" class="botão">
-        <input type="button" value="dividir" onclick="divisão()" class="botão">
-    </div>
+    <main>
+        <h1>Calculadora simples com Java Script</h1>
+        <div class="valores">
+            <label> valor 1:</label>
+            <input type="number" id="numero1">
+            <label> valor 2:</label>
+            <input type="number" id="numero2">
+        </div>
+        
+        <div class="botoes">
+            <input type="button" value="somar" onclick="soma()" class="botão">
+            <input type="button" value="subtrair" onclick="subtração()" class="botão">
+            <input type="button" value="multiplicar" onclick="multiplicasão()" class="botão">
+            <input type="button" value="dividir" onclick="divisão()" class="botão">
+        </div>
+    </main>
 
     
     <script>
