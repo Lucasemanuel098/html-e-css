@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        input {
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        input#ver {
+            background-color: red;
+        }
+        input#pre {
+            background-color: black;
+            color: white;
+        }
+        input#azu {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body id="cor"> 
+    <h1>Para mudar a cor do backgroud, aperte no botão correspondente</h1>
+    <input type="button" value="vermelho" id="ver" onclick="ver()">
+    <input type="button" value="preto" id="pre" onclick="pre()">
+    <input type="button" value="azul" id="azu" onclick="azu()">
+
+
+    <script>
+        var ver = window.document.queryCommandIndeterm('input#ver')
+        var pre = window.document.queryCommandIndeterm('input#pre')
+        var azu = window.document.queryCommandIndeterm('input#azu')
+        
+        function ver() {
+            var cor = window.document.querySelector('body#cor')
+            cor.innerHTML `style="background-color: red;`
+        }
+
+        function pre() {
+            var cor = window.document.querySelector('body#cor')
+            cor.innerHTML `style="background-color: black;`
+        }
+        
+        function azu() {
+            var cor = window.document.querySelector('body#cor')
+            cor.innerHTML `style="background-color: black";`
+        }
+    </script>
+
+</body>
+</html>
