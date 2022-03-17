@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de header</title>
     <style>
+        /*FONTES*/
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
         /*RESET*/
         * {
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: rgb(194, 96, 61);
         }
         /*HEADER*/
         header {
@@ -26,7 +31,12 @@
             color: white;
             
         }
-        
+        header h1 {
+            text-decoration: underline;
+            padding: 10px;
+            background-color: rgb(248, 92, 19);
+            border-radius: 10px;
+        }
         a {
             text-decoration: none;
             font-size: 16pt;
@@ -62,18 +72,81 @@
                 font-size: 20pt;
             }
         }
+        /*MAIN*/
+
+        main img {
+            height: 100%;
+            width: 100%;
+            
+        }
+        main h1 {
+            margin: 20px;
+            color: white;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            background-image: linear-gradient( to right, rgb(184, 70, 17), rgba(0, 0, 255, 0));
+            padding: 15px;
+            border-radius: 20px;
+        }
+        main h2 {
+            margin-bottom: 15px;
+        }
+        main section {
+            color: white;
+            font-size: 1.5em;
+            margin: 30px;
+        }
+        main section p{
+            margin-top: 10px;
+
+        }
         
+        main section img {
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.404);
+            border-radius: 10px;
+        }
+        main section a {
+            color: #ffd859;
+            font-weight:bolder;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Lucas web disigner</h1>
+        <h1>Lucas web Programador</h1>
         <nav>
             
             <li><a href="#">Mais</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Home</a></li>
     </nav>
+    
 </header>
+     <main>
+         
+         <h1>O meu nome é Lucas, e <br> esses são alguns dos <br> meus projetos.</h1>
+         <section>
+             <h2>Calculadora</h2>
+             <img src="Screenshot_4.png" alt="">
+             <div>
+                 <p>esse é um dos meus pequenos projetos com Java script(JS). como da pra ver, é uma calculadora bem simples, não foi muito complicada pra fazer kkk, deu um trabalhinho,
+                     mais para quem esta iniciando, como eu, tudo em um desafio
+                 </p>
+                 <p>ele é um dos meus favoritos, por ser Simples, facil e útil. você pode testar ele <a href="https://lucasemanuel098.github.io/html-e-css/curso%20JS/calculadoraJS.html" target="blank">AQUI</a>.</p>
+             </div>
+         </section>
+         <section>
+             <h2>Projeto cordel</h2>
+             <img src="projeto-cordel.png" alt="cordelmoderno">
+             <p>esse fio um projeto deito em um curso online, se quiser ver qual foi, é so apertar <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="blank">AQUI</a>, ele é gratuito.
+            esse foi um projeto que eu fiquei muito feliz de fazer, gostei muito do resultado, e aprtendi várias tags novas. se vc quiser ver o esse projeto, é so apertar <a href="https://lucasemanuel098.github.io/html-e-css/projeto-cordel/">AQUI</a>.</p>
+         </section>
+    
+        <section>
+            <h2>Projeto lucas</h2>
+            <img src="prejeto-lucas.png" alt="projetolucas">
+            <p>sinceramente, kkk eu fiz esse so pra brincar mesmo, fui nesse projeto q aprendi a fazer background animado.</p>
+        </section> 
+    </main>
 </body>
 </html>
