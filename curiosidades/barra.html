@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barra de progreso</title>
+    <style>
+        .barra {
+            width: 300px;
+            height: 20px;
+            border-radius: 12px;
+            background-color: rgb(255, 246, 118);
+        }
+        .barra > div {
+            height: 100%;
+            border-radius: 12px;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="barra">
+        <div></div>
+    </div>
+    <input type="number" >
+    <script>
+        const barra = document.querySelector(".barra div")
+        barra.setAttribute("style", "width: 60%")
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(141, 141, 141);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 278px;
+            padding: 30px;
+            background-color: rgb(71, 71, 71);
+            border-radius: 30px;
+        }
+        form input {
+            padding: 10px;
+            font-weight: bold;
+            outline: none;
+            text-align: center;
+            width: 82%;
+        }
+        div.opçoes {
+            display: flex;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 90%;
+        }
+        div.opçoes span {
+            width: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #222;
+            cursor: pointer;
+            text-align: center;
+            user-select: none;
+            transition: 500ms;
+        }
+        div.opçoes span:hover {
+            background-color: #eee;
+        }
+        div.opçoes span.ce {
+            background-color: #ff3232;
+            color: white;
+            font-weight: bold;
+            width: 82px;
+        }
+        div.opçoes span.ce:hover {
+            background-color: #eeee3232;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" readonly >
+        <div class="opçoes">
+            <span class="ce">CE</span>
+            <span>(</span>
+            <span>)</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>/</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>=</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>-</span>
+            <span>0</span>
+            <span>,</span>
+            <span>=</span>
+            <span>+</span>
+        </div>
+    </form>
+</body>
+</html>

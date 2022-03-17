@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de header</title>
+    <style>
+        /*RESET*/
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*HEADER*/
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: coral;
+            height: 70px;
+            
+            top: 0;
+            left: 0;
+            padding: 20px 50px;
+            color: white;
+            
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 16pt;
+            transition: 600ms;
+        }
+        nav {
+            list-style: none;
+            text-decoration: none;
+        }
+        header  nav {
+            display: flex;
+        }
+        header li a {
+            color: #ffd859;
+        }
+        header li {
+            margin: 0px 15px;
+        }
+        header li:first-child {
+            margin-left: 0;
+        }
+        header li:last-child {
+            margin-right: 0;
+        }
+        header li a:hover {
+            color: white;
+        }
+        @media (max-width:700px) {
+            header {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 20pt;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lucas web disigner</h1>
+        <nav>
+            
+            <li><a href="#">Mais</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Home</a></li>
+    </nav>
+</header>
+</body>
+</html>
