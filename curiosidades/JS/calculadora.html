@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body {
+            display: flex;
+            font-family: 'Bebas Naue';
+            height: 100vh;
+            
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(47, 47, 47)
+        }
+        input {
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            outline: none;
+            font-size: 30px;
+            width: 24px;
+           
+        }
+        div {
+            background-color: #666666;
+            padding: 30px;
+            border-radius: 30px;
+        }
+        .main {
+            display: inline-block;
+        }
+        .num {
+            width: 64px;
+            height: 67px;
+           cursor: pointer;
+           
+            
+        }
+        
+        .text {
+            width: 151px;
+            
+            height: 26px;
+            border-radius: 22px;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .text1 {
+            width: 24px;
+            height: 26px;
+            border-radius: 50%;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+        .maincolor {
+            background-color: #959595;
+        }
+        .blue {
+            background-color: #666666;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="" name="Calculator">
+        <input type="text" class="text maincolor" name="text1" disabled> 
+        <input type="text" class="text1 maincolor" name="text12" value="C" 
+                onclick="location.reload()"><br>
+        
+        <input type="button" class="num maincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">
+        <input type="button" class="num maincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">
+        <input type="button" class="num maincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">
+        <input type="button" class="num blue" name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br>
+
+        <input type="button" class="num maincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">
+        <input type="button" class="num maincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">
+        <input type="button" class="num maincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">
+        <input type="button" class="num blue" name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br>
+
+        <input type="button" class="num maincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">
+        <input type="button" class="num maincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">
+        <input type="button" class="num maincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">
+        <input type="button" class="num blue" name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br>
+
+        <input type="button" class="num maincolor" name="dot" value="." onclick="displaynum(dot.value)">
+        <input type="button" class="num maincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">
+        <input type="button" class="num maincolor" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+        <input type="button" class="num blue" name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br>
+
+        
+        
+        
+        </form>
+    </div>
+    <script>
+        function displaynum(n1) {
+            Calculator.text1.value = Calculator.text1.value + n1;
+        }
+    </script>
+</body>
+</html>
