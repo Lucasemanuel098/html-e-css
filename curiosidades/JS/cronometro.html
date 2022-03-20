@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open sans';
+            background-color: cornflowerblue;
+        }
+        button {
+            background-color: cornflowerblue;
+            border-style: none;
+            padding: 13px;
+            border-radius: 15px;
+            color: rgb(0, 0, 0);
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        div {
+            background-color: aqua;
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20%;
+            border-radius: 20px;
+            box-shadow: 2px 3px 7px black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="iniciar" onclick="start()">Iniciar</button>
+        <button class="pausar" onclick="pauser()">Pausar</button>
+        <button class="parar" onclick="stop()">Resetar</button>
+
+        <h1 id="cronometro">00:00:00</h1>
+    </div>
+
+    <script>
+        "use strict"
+        var tempo = 1000;//quantos milésimos valem 1 esegundo?
+        var cron;
+
+
+        var hora = 0;
+        var min = 0;
+        var seg = 0;
+
+        function start() {
+            cron = setInterval(() => { timer(); }, tempo)
+        }
+
+        function pauser() {
+            clearInterval(cron)
+        }
+
+        function stop() {
+            clearInterval(cron)
+             hora = 0;
+             min = 0;
+             seg = 0;
+             document.getElementById('cronometro').innerText = '00:00:00'
+        }
+        function timer() {
+
+            seg++;
+
+            if(seg==60) {
+                seg = 0
+                min++;
+
+                if(min==60) {
+                    min = 0;
+                    hora++;
+                }
+            }
+
+            var format = (hora < 10 ? '0' + hora : hora) + ':' + (min < 10 ? '0' + min : min) + ':' + (seg < 10 ? '0' + seg : seg);
+            document.getElementById('cronometro').innerText = format;
+        }
+    </script>
+</body>
+</html>
