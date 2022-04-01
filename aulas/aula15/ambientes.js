@@ -7,8 +7,8 @@ for (var pos = 0; pos < num.length; pos++) {
 */
 
 
-for (var pos = 0 in num) {
+for ( var pos = 0 in num) {
     console.log (`A posição ${pos} tem o valor ${num[pos]}.`)
 }
 
-console.log (num.indexOf(5))
+console.log (num.indexOf(5)) 

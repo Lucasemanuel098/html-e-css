@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas-home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+        /*RESET*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /*HEADER*/
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(50, 50, 151);
+            color: white;
+            display: flex;
+            padding: 20px;
+            
+            height: 63px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header h1{
+            text-transform: uppercase;
+            font-family: 'open sans';
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px;
+            font-size: 13pt;
+            text-transform: uppercase;
+        }
+        /*MAIN*/
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+            background-position: center;
+            background-size: cover;
+            background-image: url(barco-fundobg.jpg);
+
+        }
+        main div img {
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        main div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        main div h1 {
+            color: white;
+            font-family: 'open sans', Helvetica, sans-serif;
+            margin-top: 10px;
+            font-size: 26pt;
+            text-transform: uppercase;
+        }
+        main div h2 {
+            color: white;
+            font-family: 'open sans';
+            font-weight: 300;
+            text-decoration: underline;
+            margin-top: 10px;
+            
+            
+            
+        }
+
+        @media (max-width: 850px) {
+            /*HEADER*/
+            header {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 18pt;
+                margin-bottom: 15px;
+            }
+            header nav a {
+
+                font-size: 12pt;
+                margin: 10px 10px 0px 10px;
+            }
+            /*MAIN*/
+            main div h1 {
+                font-size: 20pt;
+            }
+            main div h2 {
+                font-size: 16pt;
+            }
+        }
+        @media (max-width: 500px) {
+
+            header h1 {
+                font-size: 15pt;
+            }
+            header nav a {
+                font-size: 9pt;
+                margin: 0px 5px;
+            }
+
+
+            main div h1 {
+                font-size: 15pt;
+            }
+            main div h2 {
+                font-size: 15pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lucas emanuel</h1>
+        <nav><a href="#">About me</a>
+        <a href="#">Entre em contato</a>
+        <a href="#">Portfólio</a></nav>
+    </header>
+    <main>
+        <div><img src="avatar-icon.png" alt="icone avatar">
+        <h1>Lucas emanuel alves costa</h1>
+        <h2>Estudante, e desenvolvedor</h2></div>
+    </main>
+</body>
+</html>
