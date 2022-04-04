@@ -8,6 +8,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
         /*RESET*/
+        body {
+            
+        }
         * {
             padding: 0;
             margin: 0;
@@ -36,7 +39,22 @@
             text-transform: uppercase;
         }
         /*MAIN*/
+        main h1 {
+            color: white;
+            background-color: rgb(45, 48, 207);
+            font-family: 'open sans', Helvetica, sans-serif;
+            padding: 30px;
+            box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.37);
+            font-size: 23pt;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
         main {
+            padding: 30px 0px 0px 0px;
+            text-align: center;
+            background-image: linear-gradient(45deg, rgb(0, 0, 100), rgb(17, 17, 151));
+        }
+        aside {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -46,26 +64,27 @@
             background-image: url(barco-fundobg.jpg);
 
         }
-        main div img {
+        aside div img {
             border-radius: 50%;
             height: 120px;
             width: 120px;
             margin-bottom: 20px;
+            box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.37);
         }
-        main div {
+        aside div {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        main div h1 {
+        aside div h1 {
             color: white;
             font-family: 'open sans', Helvetica, sans-serif;
             margin-top: 10px;
             font-size: 26pt;
             text-transform: uppercase;
         }
-        main div h2 {
+        aside div h2 {
             color: white;
             font-family: 'open sans';
             font-weight: 300;
@@ -74,6 +93,43 @@
             
             
             
+        }
+        
+        main article {
+            display: flex;
+            flex-direction: row;
+
+            height: 300px;
+            
+            padding: 20px;
+            align-items: center;
+
+            
+        }
+        .article2 {
+            flex-direction: row-reverse;
+        }
+        main article img {
+            width: auto;
+            height: 200px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        main article p {
+            text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.281);
+            color: white;
+            font-family: 'Open sans';
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        /*FOOTER*/
+        footer {
+            height: 17px;
+            background-color: rgb(45, 48, 207);
+            padding: 10px;
+            color: white;
+            font-family: 'open sans';
+            text-align: center;
         }
 
         @media (max-width: 850px) {
@@ -91,10 +147,10 @@
                 margin: 10px 10px 0px 10px;
             }
             /*MAIN*/
-            main div h1 {
+            aside div h1 {
                 font-size: 20pt;
             }
-            main div h2 {
+            aside div h2 {
                 font-size: 16pt;
             }
         }
@@ -109,10 +165,10 @@
             }
 
 
-            main div h1 {
+            aside div h1 {
                 font-size: 15pt;
             }
-            main div h2 {
+            aside div h2 {
                 font-size: 15pt;
             }
         }
@@ -125,10 +181,45 @@
         <a href="#">Entre em contato</a>
         <a href="#">Portfólio</a></nav>
     </header>
-    <main>
-        <div><img src="avatar-icon.png" alt="icone avatar">
+    <aside>
+        <div>
+        <img src="avatar-icon.png" alt="icone avatar">
         <h1>Lucas emanuel alves costa</h1>
-        <h2>Estudante, e desenvolvedor</h2></div>
+        <h2>Estudante, e desenvolvedor</h2>
+    </div>
+    </aside>
+
+    <main>
+        <h1>Projetos em Java script</h1>
+        <article>
+            <img src="calcjssimples.png" alt="calculadora simples com js">
+            <p>esse foi o meu primeiro projeto em Java script
+
+            </p>
+        </article>
+        <article class="article2">
+            <img src="calcjssimples.png" alt="calculadora simples com js">
+            <p>esse foi o meu primeiro projeto em Java script
+
+            </p>
+        </article>
+        <h1>projetos em HTML e CSS</h1>
+        <article>
+            <img src="calcjssimples.png" alt="calculadora simples com js">
+            <p>esse foi o meu primeiro projeto em Java script
+
+            </p>
+        </article>
+        <article class="article2">
+            <img src="calcjssimples.png" alt="calculadora simples com js">
+            <p>esse foi o meu primeiro projeto em Java script
+
+            </p>
+        </article>
     </main>
+    <footer>
+        <p>Site feito por lucas emanuel</p>
+    </footer>
+
 </body>
 </html>
