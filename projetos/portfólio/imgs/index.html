@@ -98,7 +98,7 @@
         main article {
             display: flex;
             flex-direction: row;
-
+            justify-content: space-around;
             height: 300px;
             
             padding: 20px;
@@ -111,15 +111,17 @@
         }
         main article img {
             width: auto;
-            height: 200px;
+            height: 300px;
             border-radius: 20px;
             margin: 10px;
+            box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.308);
         }
         main article p {
             text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.281);
             color: white;
             font-family: 'Open sans';
             font-weight: 800;
+            font-size: 15pt;
             text-transform: uppercase;
         }
         /*FOOTER*/
@@ -132,7 +134,7 @@
             text-align: center;
         }
 
-        @media (max-width: 850px) {
+        @media (max-width: 800px) {
             /*HEADER*/
             header {
                 flex-direction: column;
@@ -150,8 +152,34 @@
             aside div h1 {
                 font-size: 20pt;
             }
+            main article img{
+                width: 380px;
+                height: auto;
+            }
             aside div h2 {
                 font-size: 16pt;
+            }
+        }
+        @media (max-width: 650px) {
+            main article {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .article2 {
+                flex-direction: column;
+            }
+            main article img {
+                height: auto;
+                width: 320px;
+                margin-bottom: 10px;
+            }
+            main article p {
+                text-align: start;
+                font-size: 13pt;
+                margin-top: 0;
+            }
+            main h1 {
+                font-size: 18pt;
             }
         }
         @media (max-width: 500px) {
@@ -159,9 +187,13 @@
             header h1 {
                 font-size: 15pt;
             }
+            main article p {
+                font-size: 12pt;
+                text-align: center;
+            }
             header nav a {
                 font-size: 9pt;
-                margin: 0px 5px;
+                margin: 0px 10px;
             }
 
 
