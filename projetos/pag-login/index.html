@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página de login(apenas css thtml)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            height: 100vh;
+           
+            
+        }
+        
+        h1 {
+            color: rgb(0, 162, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            text-transform: uppercase;
+            top: 10px;
+        }
+        div  input {
+            margin-top: 30px;
+            height: 40px;
+
+        }
+        .p-1 {
+            position: absolute;
+            top: 70px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+        }
+        .p-2 {
+            position: absolute;
+            top: 144px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+        }
+        .container {
+            display: flex;
+            position: absolute;
+            top: 200px;
+            flex-direction: column;
+            background-color: rgb(23, 168, 120);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.507);
+            align-items: center;
+            justify-content: center; 
+        }
+        .h1-1 {
+            top:17px;
+        }
+        .h1-2 {
+            top: 20px;
+            color: blue;
+        }
+        .h1-3 {
+            top: 24px;
+            color: aqua;
+
+
+        }
+        .entrar {
+            padding: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.507);
+            border: 0;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        .entrar:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        <h1 class="h1-1">login</h1>
+        <h1 class="h1-2">login</h1>
+        <h1 class="h1-3">login</h1>
+        <p class="p-1">email</p>
+        <input type="email" id="email">
+        <p class="p-2">senha</p>
+        <input type="password" id="senha">
+        <input type="button" value="ENTRAR" class="entrar" onclick="logar()">
+        <div id="res">aaaaa</div>
+    </div>
+    <script>
+     let res = window.document.getElementsByTagName(div)
+    res.style.color = 'blue'
+        function logar() {
+           
+            
+
+           /* if (email = 'lucas123@gmail.com'){
+                res.innerHTML '<p>oi</p>'
+            }*/
+        }
+    </script>
+</body>
+</html>
