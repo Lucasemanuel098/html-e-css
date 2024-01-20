@@ -48,6 +48,9 @@ h1 {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    display: flex;
+    align-items: center;
+    justify-content: center;
       
 }
 
@@ -84,4 +87,49 @@ span {
         -webkit-user-select: none;
         touch-action: manipulation;
         width: 395px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+@media (max-width: 600px) {
+    
+    h1 {
+        font-size: 2rem;
+    }
+    #conto {
+        font-size: 2rem;
+        height: 150px;
+        width: 150px;
+    }
+    button {
+        position: relative;
+        top: 139px;
+        width: 60px;
+        
+    }
+    .buttonbaixo {
+        position: inherit;
+        width: 150px;
+    }
+}
+@media (max-width: 400px) {
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    #conto {
+        font-size: 1.5rem;
+        height: 100px;
+        width: 100px;
+    }
+    button {
+        width: 1rem;
+        height: 1rem;
+        top: 114px;
+        width: 60px;
+    }
+    .buttonbaixo {
+        
+        width: ;
+    }
 }
