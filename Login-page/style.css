@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    height: 50px;
+    
+    padding: 20px 0px 0px 12%; 
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.left-login img {
+    height: 600px;
+}
+
+.right-login {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1em;
+    padding: 50px;
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    
+}
+h2 {
+    margin-bottom: 20px;
+}
+h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    margin: 0 auto;
+}
+#mail-logo {
+    height: 50px;
+}
+.email, .password {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+.email:hover , .password:hover, .join:hover{
+    transform: scale(1.1); 
+    color: #007BFF; 
+    cursor: pointer;
+}
+.icon {
+    margin-right: 20px;
+}
+input {
+    height: 30px;
+    color: black;
+    background-color: #ffffff;
+    border: none;
+    padding: 0 15px;
+    margin: 10px 0; 
+}
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 291px;
+    margin-bottom: 20px;
+}
+.remember div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.join {
+    width: 90%; /* Largura igual aos inputs */
+    height: 50px; /* Mesma altura dos inputs */
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: black;
+    transition: background-color 0.3s; /* Transição suave */
+    margin-top: 10px; /* Espaço acima dos botões */
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+
+@media (max-width: 1200px) {
+    body {
+        align-items: center;
+    }
+    header {
+        padding: 40px 0px 0px 0px;
+    }
+    main {
+        font-size: 1.3em;
+    }
+    .left-login img {
+        height: 0;
+        width: 0;
+    }
+}
